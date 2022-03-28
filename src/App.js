@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Component/Header/Navbar.jsx";
 import CallToAction from "./Component/Header/CallToAction.jsx";
 import CardSection from "./Component/Card/CardSection";
-import Footer from "./Component/Footer/Footer.jsx"
+import Footer from "./Component/Footer/Footer.jsx";
 
 import commerce from "./lib/commerce";
 
@@ -13,11 +13,9 @@ const App = () => {
     <Box>
       <Navbar />
       <Box sx={{ backgroundColor: "black", height: 250 }} />
-      <Container>
-        <CallToAction />
-        <CardSection/>
-      </Container>
-      <Footer/>
+      <CallToAction />
+      <CardSection />
+      <Footer />
     </Box>
   );
 };

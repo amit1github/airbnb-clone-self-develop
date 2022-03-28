@@ -1,0 +1,32 @@
+{
+    "cards": [
+        {
+            "destination": "Lonavla",
+            "distance": "66 kilometres away",
+            "image": "https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=320",
+            "color": "blue",
+            "id": 1
+        },
+        {
+            "destination": "Alibagh",
+            "distance": "37 kilometres away",
+            "image": "https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=320",
+            "color": "blue",
+            "id": 2
+        },
+        {
+            "destination": "Calangute",
+            "distance": "396 kilometres away",
+            "image": "https://a0.muscache.com/im/pictures/88960fb8-6ebb-48d2-ac44-4f5e08501435.jpg?im_w=320",
+            "color": "blue",
+            "id": 3
+        },
+        {
+            "destination": "Karjat",
+            "distance": "53 kilometres away",
+            "image": "https://a0.muscache.com/im/pictures/a7a97132-3ab9-4969-ad23-32c676193df7.jpg?im_w=240",
+            "color": "blue",
+            "id": 4
+        }
+    ]
+}

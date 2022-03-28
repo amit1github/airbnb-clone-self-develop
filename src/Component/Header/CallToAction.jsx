@@ -2,7 +2,6 @@ import React from "react";
 import {
   Container,
   Box,
-  Paper,
   Card,
   CardActionArea,
   Typography,
@@ -15,9 +14,7 @@ import banners from "./Assets/banners.jpg";
 
 const CallToAction = () => {
   return (
-    <Box sx={{ borderRadius: 0 }}>
-      
-      
+    <Container sx={{ borderRadius: 0, mb: 6 }}>
       <Card
         sx={{
           borderRadius: "20px",
@@ -25,7 +22,7 @@ const CallToAction = () => {
           backgroundSize: "cover",
           height: "400px",
           padding: "30px",
-          marginTop: "-200px"
+          marginTop: "-200px",
         }}
       >
         <CardActionArea>
@@ -47,7 +44,8 @@ const CallToAction = () => {
               variant="contained"
               sx={{
                 borderRadius: 14,
-                color: "linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)",
+                color:
+                  "linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)",
                 backgroundColor: "#4158D0",
                 textTransform: "none",
               }}
@@ -57,7 +55,7 @@ const CallToAction = () => {
           </Stack>
         </CardActionArea>
       </Card>
-    </Box>
+    </Container>
   );
 };
 

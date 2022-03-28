@@ -1,45 +1,40 @@
-import React from "react";
-import {
-  Card,
-  CardContent,
-  CardMedia,
-  Typography,
-  CardActionArea,
-  Grid,
-} from "@mui/material";
+import React, { useState, useEffect } from "react";
+import { Typography, Grid, Box, IconButton, Container } from "@mui/material";
+import { ArrowForwardIosRounded } from "@mui/icons-material";
 import CardSections from "./CardSections";
 
+//Todo: look for style of typo and arrow in one line
+//Todo: GO FOR GREEN COMMENTS
+
 const CardSection = () => {
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:8000/cards")
+      .then((res) => res.json())
+      .then((data) => setCards(data));
+  }, []);
+
   return (
-    <>
-      <Grid container spacing={2}  sx={{ flexGrow:1 }} >
-        <Grid item sx={12}>
-          <Card sx={{ maxWidth: 345, mt: 6, borderRadius: "10px" }}>
-            <CardActionArea>
-              <CardMedia
-                borderRadius="10px"
-                component="img"
-                height="140"
-                image="https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=320"
-                alt="green"
-              />
-              <CardContent sx={{ backgroundColor: "#cc2d4a", height: "300" }}>
-                <Typography gutterBottom variant="h5" component="div">
-                  Lonavala
-                </Typography>
-                <Typography
-                  variant="body1"
-                  marginBottom={10}
-                  color="text.secondary"
-                >
-                  66 Kilometeres away
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        </Grid>
+    <Container>
+      <Box sx={{ justifyContent: "space-between" }}>
+        <Typography variant="h5">Inspiration for your next trip</Typography>
+        <IconButton>
+          <ArrowForwardIosRounded />
+        </IconButton>
+      </Box>
+
+      <Grid container sx={{ flexGrow: 1 }} spacing={2} justifyContent="center">
+        {cards.map((card) => (
+          //TODO: {/* Screen spacing issue while giving screen size to 3 */}
+          <Grid item key={card.id} xs={12} sm={6} lg={4}>
+            {/* {card.destination} */}
+
+            <CardSections card={card} />
+          </Grid>
+        ))}
       </Grid>
-    </>
+    </Container>
   );
 };
 
