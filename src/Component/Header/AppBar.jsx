@@ -14,7 +14,7 @@ import {
 } from "@mui/material";
 import {  MenuOutlined } from "@mui/icons-material";
 
-import avatar from "../Header/Assets/avatar.png";
+import avatar from "../Assets/avatar.png";
 
 
 const pages = ["Products", "Pricing", "Blog"];

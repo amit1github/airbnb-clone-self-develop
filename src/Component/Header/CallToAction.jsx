@@ -8,7 +8,6 @@ import {
   Button,
   Stack,
 } from "@mui/material";
-import banners from "./Assets/banners.jpg";
 
 // TODO: to make action button like airbnb
 
@@ -18,7 +17,7 @@ const CallToAction = () => {
       <Card
         sx={{
           borderRadius: "20px",
-          backgroundImage: `url(${banners})`,
+          backgroundImage: `url(${"https://a0.muscache.com/im/pictures/6dbfc87a-22a4-4d4a-b352-99aa93a98e78.jpg?im_w=720"})`,
           backgroundSize: "cover",
           height: "400px",
           padding: "30px",
@@ -44,9 +43,8 @@ const CallToAction = () => {
               variant="contained"
               sx={{
                 borderRadius: 14,
-                color:
-                  "linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)",
-                backgroundColor: "#4158D0",
+                // color: "linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)",
+                // backgroundColor: "#4158D0",
                 textTransform: "none",
               }}
             >
