@@ -14,8 +14,9 @@ import {
 } from "@mui/material";
 import {  MenuOutlined } from "@mui/icons-material";
 
-import avatar from "../Assets/avatar.png";
+// import avatar 
 
+//Todo: to put routing in navbar image
 
 const pages = ["Products", "Pricing", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -111,7 +112,7 @@ const Header = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Avatar-Icon" src={avatar} />
+                <Avatar alt="Avatar-Icon" src="https://i.pinimg.com/474x/22/16/4e/22164e23f53106778603d500379b34ab.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
